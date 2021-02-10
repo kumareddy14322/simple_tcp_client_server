@@ -28,7 +28,7 @@ func main() {
 	logFatal(err)
 
 	username = strings.Trim(username, "\r\n")
-	welcomeMSg := fmt.Sprintf("Welcome %s ! write Below to send Messages :-.", username)
+	welcomeMSg := fmt.Sprintf("Welcome %s ! write Below to send Messages !", username)
 	fmt.Println(welcomeMSg)
 
 	go Read(connection)

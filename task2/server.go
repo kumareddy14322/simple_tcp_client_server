@@ -70,7 +70,7 @@ func Store(conn net.Conn) {
 		username := parts[0]
 		message := parts[1]
 
-		fmt.Println(message)
+		//fmt.Println(message)
 		switch msg := strings.Trim(message, "\r\n"); msg {
 		case "#getFirstMsg":
 			fmt.Println("first")
