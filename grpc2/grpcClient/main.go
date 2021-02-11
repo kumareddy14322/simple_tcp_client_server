@@ -1,7 +1,7 @@
 package main
 import (
 	"log"
-	 pb "c:Users/Kumar/Desktop/simple_cp_client_server/simple_tcp_client_server/grpc2/datafiles/datafiles"
+	 pb "github.com/kumareddy14322/simple_tcp_client_server/grpc2/datafiles/datafiles"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
@@ -19,7 +19,7 @@ if err != nil {
 	defer conn.Close()
 	c := pb.NewMoneyTransactionClient(conn)
 	// Prepare data. Get this from clients like Frontend or App
-	from := "1234"
+	from := "0000"
 	to := "5678"
 	amount := float32(1250.75)
 	// Contact the server and print out its response.
